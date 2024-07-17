@@ -1,3 +1,11 @@
+<?php
+    $cms = require_once $_SERVER['DOCUMENT_ROOT'] . '/init.php';
+    $cms->landing( 1, 2 );
+
+    $cms->thankspage = DIR . './success/success.php';
+    define( 'THANKSPAGE', $_SERVER['DOCUMENT_ROOT'] . './success/success.php' );
+?>
+
 <!DOCTYPE html>
 <html lang=hu dir=ltr class="webp webp-alpha webp-animation webp-lossless">
 
@@ -4317,10 +4325,10 @@
                     "company": "249"
                 },
                 "HU": {
-                    "s1": 11400,
+                    "s1": <?=$cms->price;?>,
                     "s2": 0,
-                    "s3": 11400,
-                    "s4": 22800,
+                    "s3": <?=$cms->price;?>,
+                    "s4": <?=$cms->oldpr;?>,
                     "discount": "50",
                     "curr": "HUF",
                     "specialfields": [],
@@ -4636,11 +4644,11 @@
                         <div class=price>
                             <div class=price-old>
                                 <div class=price-old__title>Régi ár</div>
-                                <div class=price-old__item> <span class=price_land_s4>22800</span>&nbsp;<span class=price_land_curr>HUF</span></div>
+                                <div class=price-old__item> <span class=price_land_s4><?=$cms->oldpr;?></span>&nbsp;<span class=price_land_curr>HUF</span></div>
                             </div>
                             <div class=price-new>
                                 <div class=price-new__title>Új ár</div>
-                                <div class=price-new__item> <span class=price_land_s1>11400</span>&nbsp;<span class=price_land_curr>HUF</span></div>
+                                <div class=price-new__item> <span class=price_land_s1><?=$cms->price;?></span>&nbsp;<span class=price_land_curr>HUF</span></div>
                             </div>
                         </div>
                         <label class=label>
@@ -4764,10 +4772,10 @@
                 </div>
                 <div class=price>
                     <div class=price-old>
-                        <div class=price-old__item> <span class=price_land_s4>22800</span>&nbsp;<span class=price_land_curr>HUF</span> </div>
+                        <div class=price-old__item> <span class=price_land_s4><?=$cms->oldpr;?></span>&nbsp;<span class=price_land_curr>HUF</span> </div>
                     </div>
                     <div class=price-new>
-                        <div class=price-new__item> <span class=price_land_s1>11400</span>&nbsp;<span class=price_land_curr>HUF</span>
+                        <div class=price-new__item> <span class=price_land_s1><?=$cms->price;?></span>&nbsp;<span class=price_land_curr>HUF</span>
                         </div>
                     </div>
                 </div>
@@ -4907,10 +4915,10 @@
                 </div>
                 <div class=price>
                     <div class=price-old>
-                        <div class=price-old__item> <span class=price_land_s4>22800</span>&nbsp;<span class=price_land_curr>HUF</span> </div>
+                        <div class=price-old__item> <span class=price_land_s4><?=$cms->oldpr;?></span>&nbsp;<span class=price_land_curr>HUF</span> </div>
                     </div>
                     <div class=price-new>
-                        <div class=price-new__item> <span class=price_land_s1>11400</span>&nbsp;<span class=price_land_curr>HUF</span>
+                        <div class=price-new__item> <span class=price_land_s1><?=$cms->price;?></span>&nbsp;<span class=price_land_curr>HUF</span>
                         </div>
                     </div>
                 </div>
@@ -5363,11 +5371,11 @@
                     <div class=price>
                         <div class=price-old>
                             <div class=price-old__title>Régi ár</div>
-                            <div class=price-old__item> <span class=price_land_s4>22800</span>&nbsp;<span class=price_land_curr>HUF</span></div>
+                            <div class=price-old__item> <span class=price_land_s4><?=$cms->oldpr;?></span>&nbsp;<span class=price_land_curr>HUF</span></div>
                         </div>
                         <div class=price-new>
                             <div class=price-new__title>Új ár</div>
-                            <div class=price-new__item> <span class=price_land_s1>11400</span>&nbsp;<span class=price_land_curr>HUF</span> </div>
+                            <div class=price-new__item> <span class=price_land_s1><?=$cms->price;?></span>&nbsp;<span class=price_land_curr>HUF</span> </div>
                         </div>
                     </div>
                     <label class=label>
@@ -6782,6 +6790,7 @@
         })();
         pagespeed.CriticalCssLoader.Run();
     </script>
+    <?php $cms->footer(); ?>
 </body>
 
 </html>
