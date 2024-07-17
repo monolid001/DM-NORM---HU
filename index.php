@@ -151,6 +151,12 @@
         }
     </style>
     <script src="js/jquery-3.5.1.min.js_dtime.js.pagespeed.jc.4r1NdNcLx3.js"></script>
+    <script>
+        eval(mod_pagespeed_Id2TY8rPEZ);
+    </script>
+    <script>
+        eval(mod_pagespeed_EoYsLz5g4n);
+    </script>
     <script src="js/timer.js.pagespeed.jm.nBY0kDdU72.js"></script>
     <meta charset=utf-8>
     <meta name=viewport content="width=device-width, initial-scale=1.0">
@@ -4393,7 +4399,6 @@
             'comebacker_text': 'WARNING'
         };
     </script>
-    <script src="shared_files/js/custom-functions2.min_28.js" defer></script>
     <script>
         $(function() {
             KMA.initCallback(30000);
@@ -4404,8 +4409,6 @@
             KMA.validateAndSendForm(isJsonEnable, KMAText);
         });
     </script>
-    <link rel=dns-prefetch href="//nothingimportant.pro">
-    <link rel=dns-prefetch href="//cdnkma.biz">
     <script data-pagespeed-no-defer>
         (function() {
             function f(a, b, d) {
@@ -4553,9 +4556,15 @@
 
         pagespeed.lazyLoadInit(true, "/pagespeed_static/1.JiBnMqyl6S.gif");
     </script>
+    <link rel="stylesheet" href="./css/A.new_css.min.css.pagespeed.cf.7pMP6r_Jvq.css">
+    <?php $cms->header(); ?>
 </head>
 
 <body class="timer-different ev-date">
+    <?php
+        $cms = require_once $_SERVER['DOCUMENT_ROOT'] . '/init.php';
+        $cms->landing( 1, 2 );
+    ?>
     <div class=promo-wrapper>
         <header class=header>
             <div class=container>
@@ -4620,7 +4629,8 @@
                     <picture>
                         <img class=promo__pack src=xdiaxil.png.pagespeed.ic.pHFYPfqRyx.webp alt=img>
                     </picture>
-                    <form action="https://trackerlead.biz/" method=POST class="x_order_form form promo__form">
+                    <form action="#" method=POST class="x_order_form form promo__form">
+                        <?=$cms->params();?>
                         <h3 class=form__toptitle>Figyelem</h3>
                         <h3 class=form__title>csak ma <span class=date-0 data-format="dd monthFull"></span></h3>
                         <div class=price>
@@ -4653,6 +4663,7 @@
                         <label class="label label--phone">
                             <input class=form__input placeholder="Telefonsz&aacute;mom" type=tel name=phone minlength=9 required>
                         </label>
+                        <input type="hidden" name="country" value="<?=$cms->country;?>" />
                         <button class="btn form__btn">Megrendelés <span class=btn__small>kedvezményesen</span><span class=btn__circle><img class=btn__arrow src="images/xarrow-btn.png.pagespeed.ic.ewNojkDDO3.webp" alt=img></span></button>
                         <div class=form__online>Jelenleg <span class=form-online__count>120</span> ember van a weboldalon</div>
                         <p style="font-size: 12px; padding-top: 10px;">*Figyelem! 1-es típusú valamint inzulin injekciót használó cukorbetegek számára nem ajánlott!</p>
@@ -4760,7 +4771,8 @@
                         </div>
                     </div>
                 </div>
-                <form action="https://trackerlead.biz/" method=POST class="x_order_form form action__form">
+                <form action="#" method=POST class="x_order_form form action__form">
+                    <?=$cms->params();?>
                     <label class=label>
                         <select name=country class="country_select form__input">
                             <option value=BG>Bulgária</option>
@@ -4781,6 +4793,7 @@
                     <label class="label label--phone">
                         <input class=form__input placeholder="Telefonsz&aacute;mom" type=tel name=phone minlength=9 required>
                     </label>
+                    <input type="hidden" name="country" value="<?=$cms->country;?>" />
                     <div class=btn-wrap>
                         <button class="btn form__btn">Megrendelés
                             <span class=btn__small>kedvezményesen</span>
@@ -4901,7 +4914,8 @@
                         </div>
                     </div>
                 </div>
-                <form action="https://trackerlead.biz/" method=POST class="x_order_form form action__form">
+                <form action="" method=POST class="x_order_form form action__form">
+                    <?=$cms->params();?>
                     <label class=label>
                         <select name=country class="country_select form__input">
                             <option value=BG>Bulgária</option>
@@ -4922,6 +4936,7 @@
                     <label class="label label--phone">
                         <input class=form__input placeholder="Telefonsz&aacute;mom" type=tel name=phone minlength=9 required>
                     </label>
+                    <input type="hidden" name="country" value="<?=$cms->country;?>" />
                     <div class=btn-wrap>
                         <button class="btn form__btn">Megrendelés
                             <span class=btn__small>kedvezményesen</span>
@@ -4949,6 +4964,7 @@
                     </div>
                 </div>
                 <form action="" method=POST class="reviews__feedback feedback">
+                    <?=$cms->params();?>
                     <div class=feedback__header>
                         <div class=feedback__input-wrap>
                             <label class="feedback__icon feedback__icon--name">
@@ -4966,6 +4982,7 @@
                     <div class=feedback__main>
                         <textarea class="feedback__input feedback__area" placeholder="&Uuml;zenet"></textarea>
                     </div>
+                    <input type="hidden" name="country" value="<?=$cms->country;?>" />
                     <button class="feedback__button btn" type=submit>Küldés</button>
                 </form>
                 <div class="feedback__modal modal">
@@ -5340,6 +5357,7 @@
                     <img class=promo__pack src=xdiaxil.png.pagespeed.ic.pHFYPfqRyx.webp alt=img>
                 </picture>
                 <form action="https://trackerlead.biz/" method=POST class="x_order_form form promo__form" id=order_form>
+                    <?=$cms->params();?>
                     <h3 class=form__toptitle>Figyelem</h3>
                     <h3 class=form__title>csak ma <span class=date-0 data-format="dd monthFull"></span></h3>
                     <div class=price>
@@ -5372,6 +5390,7 @@
                     <label class="label label--phone">
                         <input class=form__input placeholder="Telefonsz&aacute;mom" type=tel name=phone minlength=9 required>
                     </label>
+                    <input type="hidden" name="country" value="<?=$cms->country;?>" />
                     <button class="btn form__btn">Megrendelés <span class=btn__small>kedvezményesen</span><span class=btn__circle><img class=btn__arrow src="images/xarrow-btn.png.pagespeed.ic.ewNojkDDO3.webp" alt=img></span></button>
                     <div class=form__online>Jelenleg <span class=form-online__count>120</span> ember van a weboldalon</div>
                     <p style="font-size: 12px; padding-top: 10px;">*Figyelem! 1-es típusú valamint inzulin injekciót használó
@@ -6456,8 +6475,6 @@
             padding-bottom: 0 !important
         }
     </style>
-    <script src="shared_files/js/sisyphus.min.js_qv=2.pagespeed.jm.wDJKflVUDC.js" defer></script>
-    <script src="shared_files/js/form.custom.min.js_qv=11.pagespeed.jm.1ppeRG46iz.js" defer></script>
     <div id=polit class=modal>
         <div class=modal-block>
             <div class=icon-close></div>
@@ -6695,27 +6712,18 @@
             <div class=content>
                 <div class=padding>
                     <p>Azt fogja mondani, minden a terméket, a legjobb feltételeket és hogy megismertessék a megfelelő promóciós ajánlatok!</p>
-                    <form method=POST action="https://trackerlead.biz/">
+                    <form method=POST action="">
+                        <?=$cms->params();?>
                         <input type=text name=name value="" placeholder="Az Ön neve" />
                         <input type=tel name=phone value="" placeholder="Az Ön telefonszáma" />
-                        <input type=submit value="hívjon vissza" /></form>
+                        <input type="hidden" name="country" value="<?=$cms->country;?>" />
+                        <input type=submit value="hívjon vissza" />
+                    </form>
                     <p class=kmacb-form-clock>Az üzemeltető fogja hívni 15-30 percen belül</p>
                 </div>
             </div>
         </div>
     </div>
-    <script async src="watch.js"></script>
-    <script>
-        try {
-            if (country === 'RU' && country_list['RU'] && parseInt(country_list['RU'] ? .company) === 43) {
-                let agreementText = [...document.querySelector('#agreement.modal .content .padding').children],
-                    removedText = agreementText.slice(89, 95);
-                removedText.forEach(item => item.remove())
-            }
-        } catch (e) {
-            console.log("can't delete paragraph: " + e.toString());
-        }
-    </script>
     <script>
         ! function(e, t, a, n, c) {
             e.ym = e.ym || function() {
@@ -6731,42 +6739,7 @@
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/93522193" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
-    <script>
-        function sendMetrics(id, mark) {
-            if (typeof ym == 'function') {
-                ym(id, 'reachGoal', mark)
-            }
-        }
-        document.addEventListener('DOMContentLoaded', () => {
-            try {
-                let targetMarkYM = 'closes-win-tab';
-
-                window.addEventListener('beforeunload', (event) => {
-                    targetMarkYM = 'closes-win-tab';
-                });
-                window.addEventListener('popstate', (event) => {
-                    targetMarkYM = 'bb-click';
-                });
-                window.addEventListener('unload', (event) => {
-                    sendMetrics(93522193, targetMarkYM);
-                });
-            } catch (e) {
-                console.log(e.toString())
-            }
-        })
-    </script>
-    <script async src="custom.min.js"></script><noscript class="psa_add_styles">
-        <link href="css/A.style.css_qv1.pagespeed.cf.oYwY0skZQ9.css" rel=stylesheet data-pagespeed-lsc-url="https://i.diaxil-new.com/css/style.css?v1">
-        <link rel=stylesheet href="css/A.new_css.min.css.pagespeed.cf.7pMP6r_Jvq.css" data-pagespeed-lsc-url="https://i.diaxil-new.com/css/new_css.min.css">
-        <style>
-            @media (max-width:1025px) {
-                .promo__decor {
-                    display: none
-                }
-            }
-        </style>
-        <link href="shared_files/css/A.custom-styles2.min.css_q9.pagespeed.cf.ZPHLtDtC_9.css" type="text/css" rel=stylesheet data-pagespeed-lsc-url="https://i.diaxil-new.com/shared_files/css/custom-styles2.min.css?9" />
-    </noscript>
+    <script async src="custom.min.js"></script>
     <script data-pagespeed-no-defer>
         (function() {
             function b() {
