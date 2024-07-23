@@ -4239,10 +4239,6 @@
             -webkit-appearance: none;
             margin: 0
         }
-
-        input[type="number"] {
-            -moz-appearance: textfield
-        }
     </style>
     <style>
         @media (max-width:1025px) {
@@ -4325,10 +4321,10 @@
                     "company": "249"
                 },
                 "HU": {
-                    "s1": <?=$cms->price;?>,
+                    "s1": "<?=$cms->price;?>",
                     "s2": 0,
-                    "s3": <?=$cms->price;?>,
-                    "s4": <?=$cms->oldpr;?>,
+                    "s3": "<?=$cms->price;?>",
+                    "s4": "<?=$cms->oldpr;?>",
                     "discount": "50",
                     "curr": "HUF",
                     "specialfields": [],
@@ -5535,14 +5531,12 @@
 
         #kmacb {
             position: fixed;
-            *visibility: hidden;
+            visibility: hidden;
             display: none;
             background-color: transparent;
             width: 160px;
             height: 160px;
             z-index: 200000 !important;
-            -webkit-backface-visibility: hidden;
-            -webkit-transform: translateZ(0);
             -webkit-transition: visibility .5s;
             -moz-transition: visibility .5s;
             -o-transition: visibility .5s;
@@ -6396,13 +6390,6 @@
             font-size: 12px
         }
 
-        select,
-        button,
-        input[type="submit"] {
-            -webkit-appearance: none;
-            -moz-appearance: none
-        }
-
         @media screen and (min-width:470px) {
             .kmacb-form2 .modal-block {
                 width: 460px
@@ -6423,10 +6410,6 @@
 
         #polit.modal .content rekv {
             display: inline
-        }
-
-        #polit.modal .content rekv br {
-            dislay: none
         }
 
         #polit.modal .content {
@@ -6732,21 +6715,6 @@
             </div>
         </div>
     </div>
-    <script>
-        ! function(e, t, a, n, c) {
-            e.ym = e.ym || function() {
-                (e.ym.a = e.ym.a || []).push(arguments)
-            }, e.ym.l = +new Date, n = t.createElement(a), c = t.getElementsByTagName(a)[0], n.async = 1, n.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js", c.parentNode.insertBefore(n, c)
-        }(window, document, "script"), ym(93522193, "init", {
-            clickmap: !0,
-            trackLinks: !0,
-            accurateTrackBounce: !0,
-            webvisor: false
-        });
-    </script>
-    <noscript>
-        <div><img src="https://mc.yandex.ru/watch/93522193" style="position:absolute; left:-9999px;" alt="" /></div>
-    </noscript>
     <script async src="custom.min.js"></script>
     <script data-pagespeed-no-defer>
         (function() {
