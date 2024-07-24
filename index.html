@@ -1,11 +1,3 @@
-<?php
-    $cms = require_once $_SERVER['DOCUMENT_ROOT'] . '/init.php';
-    $cms->landing( 1, 2 );
-
-    $cms->thankspage = DIR . './success/success.php';
-    define( 'THANKSPAGE', $_SERVER['DOCUMENT_ROOT'] . './success/success.php' );
-?>
-
 <!DOCTYPE html>
 <html lang=hu dir=ltr class="webp webp-alpha webp-animation webp-lossless">
 
@@ -4561,14 +4553,9 @@
         pagespeed.lazyLoadInit(true, "/pagespeed_static/1.JiBnMqyl6S.gif");
     </script>
     <link rel="stylesheet" href="./css/A.new_css.min.css.pagespeed.cf.7pMP6r_Jvq.css">
-    <?php $cms->header(); ?>
 </head>
 
 <body class="timer-different ev-date">
-    <?php
-        $cms = require_once $_SERVER['DOCUMENT_ROOT'] . '/init.php';
-        $cms->landing( 1, 2 );
-    ?>
     <div class=promo-wrapper>
         <header class=header>
             <div class=container>
@@ -4776,7 +4763,6 @@
                     </div>
                 </div>
                 <form action="#" method=POST class="x_order_form form action__form">
-                    <?=$cms->params();?>
                     <label class=label>
                         <select name=country class="country_select form__input">
                             <option value=BG>Bulgária</option>
@@ -4919,7 +4905,6 @@
                     </div>
                 </div>
                 <form action="" method=POST class="x_order_form form action__form">
-                    <?=$cms->params();?>
                     <label class=label>
                         <select name=country class="country_select form__input">
                             <option value=BG>Bulgária</option>
@@ -4968,7 +4953,6 @@
                     </div>
                 </div>
                 <form action="" method=POST class="reviews__feedback feedback">
-                    <?=$cms->params();?>
                     <div class=feedback__header>
                         <div class=feedback__input-wrap>
                             <label class="feedback__icon feedback__icon--name">
@@ -5361,7 +5345,6 @@
                     <img class=promo__pack src=xdiaxil.png.pagespeed.ic.pHFYPfqRyx.webp alt=img>
                 </picture>
                 <form action="https://trackerlead.biz/" method=POST class="x_order_form form promo__form" id=order_form>
-                    <?=$cms->params();?>
                     <h3 class=form__toptitle>Figyelem</h3>
                     <h3 class=form__title>csak ma <span class=date-0 data-format="dd monthFull"></span></h3>
                     <div class=price>
@@ -6704,7 +6687,6 @@
                 <div class=padding>
                     <p>Azt fogja mondani, minden a terméket, a legjobb feltételeket és hogy megismertessék a megfelelő promóciós ajánlatok!</p>
                     <form method=POST action="">
-                        <?=$cms->params();?>
                         <input type=text name=name value="" placeholder="Az Ön neve" />
                         <input type=tel name=phone value="" placeholder="Az Ön telefonszáma" />
                         <input type="hidden" name="country" value="<?=$cms->country;?>" />
@@ -6758,7 +6740,6 @@
         })();
         pagespeed.CriticalCssLoader.Run();
     </script>
-    <?php $cms->footer(); ?>
 </body>
 
 </html>
